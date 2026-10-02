@@ -1,106 +1,108 @@
-# 🧠 Segundo Cérebro em IA: Aprendizado de Inglês (Básico ao Avançado)
+# 🧠 Meu Segundo Cérebro em IA: Aprendizado de Inglês (Básico ao Avançado)
 
-> **Desafio DIO:** Criando um Segundo Cérebro com IA no Gemini Notebook (NotebookLM)  
-> **Autor:** Estudante DIO / Desenvolvedor Tech  
-> **Ferramenta Utilizada:** [Gemini Notebook (NotebookLM - Google)](https://notebook.google.com/)  
-> **Link do Notebook Compartilhado:** [Acessar Meu Gemini Notebook de Inglês](https://notebook.google.com/) *(Substitua pelo seu link público compartilhado)*
-
----
-
-## 🎯 Tema e Objetivo
-
-* **Tema:** Aprendizado do Idioma Inglês (do Nível Básico A1 ao Avançado C2 com foco em Inglês Geral e Técnico/Profissional).
-* **Objetivo:** *"Construir um tutor especialista interativo em língua inglesa capaz de orientar estudantes do básico ao avançado através de fontes confiáveis curadas, fornecendo explicações gramaticais com citações exatas, listas de vocabulário contextual, testes interativos e materiais práticos de pronúncia e conversação."*
+> **Projeto do Desafio DIO:** Criando um Segundo Cérebro com IA no Gemini Notebook (NotebookLM)  
+> **Desenvolvido por:** [Elizeu Couto](https://github.com/Elizeu-Couto)  
+> **Ferramenta:** [Gemini Notebook (NotebookLM - Google)](https://notebook.google.com/)  
+> **Link do Meu Notebook:** [Acessar Meu Gemini Notebook de Inglês](https://notebook.google.com/) *(Cole aqui o link público do seu notebook)*
 
 ---
 
-## 📚 Fontes Curadas e Justificativa de Confiabilidade
+## 🎯 Por que escolhi este Tema e qual meu Objetivo?
 
-Para alimentar este segundo cérebro, selecionei exclusivamente fontes renomadas em múltiplos formatos (vídeos no YouTube, PDFs de matriz gramatical e artigos acadêmicos/técnicos). As buscas por vídeos foram efetuadas em **aba anônima** para evitar interferências do algoritmo de recomendação do YouTube.
+Escolhi montar meu segundo cérebro focado no **aprendizado do idioma inglês** porque dominar o inglês — desde a base gramatical até o vocabulário técnico da área de tecnologia — é indispensável para minha evolução profissional e para me comunicar em ambientes globais.
 
-| Fonte / Recurso | Formato | Criador / Instituição | Por que confio nesta fonte? |
-|-----------------|---------|-----------------------|-----------------------------|
-| **BBC Learning English - Basic to Advanced Grammar** | Vídeo / Transcrição | BBC World Service | Referência global em ELT (English Language Teaching) há mais de 80 anos, com metodologia pedagógica rigorosa. |
-| **Cambridge English CEFR Companion Guide** | PDF | Cambridge Assessment English | Coautora do padrão internacional CEFR, fornecendo a matriz oficial de competências (A1 a C2). |
-| **Rachel's English - Pronunciation & IPA** | Vídeo / Transcrição | Rachel's English | Especialista americana com mestrado em fonética, focada no Alfabeto Fonético Internacional e redução de sotaque. |
-| **Oxford Online English - Business Conversations** | Artigo / Vídeo | Oxford Online English | Conteúdo desenvolvido por professores certificados CELTA/DELTA focado em situações reais de trabalho. |
-| **Tech English Guide for Software Engineers** | PDF | OpenStax / MIT OCW | Material open-access do MIT com terminologia oficial utilizada em empresas globais de tecnologia. |
-
-> 📌 *Veja a análise completa de exclusão e inclusão de fontes em [`docs/fontes_curadas.md`](docs/fontes_curadas.md).*
+* **Meu Objetivo em 1 Frase:**  
+  *"Construir um tutor especialista interativo em língua inglesa capaz de me guiar do nível básico ao avançado através de fontes confiáveis curadas por mim, fornecendo explicações gramaticais com citações exatas, listas de vocabulário contextual, testes interativos e materiais práticos de pronúncia."*
 
 ---
 
-## 🤖 Diretriz de Comportamento (System Prompt)
+## 📚 Como escolhi as Fontes e por que confio nela?
 
-Forneci a seguinte diretriz no painel de instruções do Gemini Notebook para garantir respostas didáticas, com rigor científico e citações obrigatórias:
+Em vez de pegar qualquer vídeo solto na internet, fiz as buscas por vídeos em **aba anônima** do navegador para evitar que o algoritmo do YouTube escolhesse por mim. Selecionei apenas fontes de instituições consagradas e especialistas com autoridade reconhecida:
+
+| Fonte Selecionada | Formato | Criador / Instituição | Por que decidi incluir? |
+|-------------------|---------|-----------------------|-------------------------|
+| **BBC Learning English** | Vídeo / Transcrição | BBC World Service | É a maior referência pública de ensino de inglês britânico do mundo. Garante explicações gramaticais precisas. |
+| **Cambridge CEFR Companion Guide** | PDF | Cambridge Assessment | A Cambridge é coautora da escala CEFR (A1 a C2). É o padrão oficial usado em exames de proficiência. |
+| **Rachel's English** | Vídeo / Transcrição | Rachel's English | Excelente para entender o Alfabeto Fonético (IPA) e perder o receio da pronúncia no inglês americano. |
+| **Oxford Online English** | Artigo / Vídeo | Oxford Online English | Focado em conversas reais de trabalho, reuniões e comunicação profissional. |
+| **Tech English Guide** | PDF / Texto | MIT OCW / OpenStax | Traz o vocabulário exato de tecnologia (code review, deploy, bottleneck, workaround) que uso no dia a dia. |
+
+> 📌 *Veja minha análise completa de exclusão e inclusão de fontes em [`docs/fontes_curadas.md`](docs/fontes_curadas.md).*
+
+---
+
+## 🤖 Como instruí o Gemini Notebook (Minha Diretriz)
+
+Para transformar o notebook em um tutor exigente e didático, configurei a seguinte instrução no painel de comportamento:
 
 ```text
-Você é o "English Master AI", um tutor pedagógico e especialista sênior no ensino do idioma inglês, qualificado nas metodologias Cambridge English, Oxford ELT e no Quadro Comum Europeu de Referência para Línguas (CEFR - níveis A1, A2, B1, B2, C1 e C2).
+Você é o meu tutor de inglês pessoal. Sua função é me guiar do nível básico ao avançado com base EXCLUSIVAMENTE nas fontes que eu adicionei.
 
-REGRAS DE RESPOSTA:
-1. FIDELIDADE RÍGIDA ÀS FONTES: Responda SEMPRE apontando as citações diretas das fontes vinculadas a este Notebook.
-2. DIDÁTICA E PROGRESSÃO: Identifique o nível da pergunta (A1 a C2), forneça explicação simples, frases de exemplo com tradução, dica de pronúncia e aplicação em Tech English.
-3. TOM DE VOZ: Encorajador, estruturado e profissional.
-4. MATERIAIS: Gere quizzes, guias e resumos sempre que solicitado.
+Regras que você deve seguir:
+1. Sempre mostre de qual fonte (vídeo ou PDF) você tirou a resposta.
+2. Explique os conceitos em português, mas me dê os exemplos e frases práticas em inglês.
+3. Quando eu errar no chat, me corrija com gentileza e mostre a regra gramatical correspondente.
+4. Quando eu pedir, me dê exercícios rápidos de fixação ou termos de inglês técnico.
 ```
 
-> 📌 *Veja o documento completo em [`docs/diretriz_comportamento.md`](docs/diretriz_comportamento.md).*
+> 📌 *Veja o documento completo da diretriz em [`docs/diretriz_comportamento.md`](docs/diretriz_comportamento.md).*
 
 ---
 
-## 💬 Perguntas Realizadas e Respostas com Citações
+## 💬 Testando o Notebook no Chat (Exemplos Reais com Citação)
 
-Abaixo estão exemplos das interações realizadas com a IA, demonstrando que todas as respostas foram extraídas diretamente das fontes cadastradas:
+Fiz algumas perguntas no chat para testar se a IA estava realmente respondendo com base nas fontes adicionadas:
 
-### ❓ Pergunta 1 (Nível Intermediário - B1):
-> *"Qual é a diferença entre 'I have worked here since 2020' e 'I worked here in 2020'? Explique e mostre de qual fonte veio a resposta."*
+### ❓ Minha Pergunta 1 (Gramática B1):
+> *"Qual a diferença prática entre 'I have worked here since 2020' e 'I worked here in 2020'?"*
 
-#### 🤖 Resposta do Gemini Notebook:
-> 1. **"I have worked here since 2020" (Present Perfect):** Indica uma ação que iniciou em 2020 e **continua até o presente**.
-> 2. **"I worked here in 2020" (Past Simple):** Indica uma ação concluída no passado. Você **não trabalha mais lá**.
+#### 🤖 Resposta do Notebook:
+> 1. **"I have worked here since 2020" (Present Perfect):** Você começou em 2020 e **continua trabalhando lá hoje**.
+> 2. **"I worked here in 2020" (Past Simple):** Ação concluída no passado. Você **não trabalha mais lá**.
 > 
-> 📌 **Citações diretas:**  
-> - **[Fonte 1: BBC Learning English - Grammar Course, Present Perfect Module]**  
-> - **[Fonte 2: Cambridge English CEFR Companion Guide, Descritores B1]**
+> 📌 **De onde veio a resposta:**  
+> - *Fonte: BBC Learning English (Módulo de Present Perfect vs Past Simple)*  
+> - *Fonte: Cambridge CEFR Companion Guide (Descritores B1)*
 
 ---
 
-### ❓ Pergunta 2 (Nível Básico - A1/A2):
-> *"Por que a palavra 'th' tem som diferente em 'think' e em 'this'? Como produzo esse som?"*
+### ❓ Minha Pergunta 2 (Pronúncia A1/A2):
+> *"Como pronuncio o 'th' em 'think' e 'this'?"*
 
-#### 🤖 Resposta do Gemini Notebook:
-> 1. **/θ/ em "think" (Unvoiced):** Coloque a ponta da língua entre os dentes e expire o ar sem vibrar as cordas vocais.
-> 2. **/ð/ em "this" (Voiced):** Posição idêntica da língua, mas com **vibração ativa das cordas vocais**.
+#### 🤖 Resposta do Notebook:
+> - Em **"think"** o som é desvozeado (/θ/): língua nos dentes soltando só o ar.  
+> - Em **"this"** o som é vozeado (/ð/): a mesma posição da língua, mas fazendo a garganta vibrar.  
 > 
-> 📌 **Citação direta:**  
-> - **[Fonte 3: Rachel's English - Pronunciation & IPA, Aula: The Two TH Sounds]**
+> 📌 **De onde veio a resposta:**  
+> - *Fonte: Rachel's English (Aula: The Two TH Sounds)*
 
 > 📌 *Confira o log completo com mais perguntas e a matriz de rastreabilidade em [`evidencias/prints_chat_citacoes.md`](evidencias/prints_chat_citacoes.md).*
 
 ---
 
-## 🎨 Materiais de Estudo Gerados no Estúdio
+## 🎨 Materiais de Estudo que Criei no Estúdio
 
-A partir do conhecimento consolidado no notebook, foram gerados e exportados os seguintes materiais práticos:
+Aproveitei os recursos do Estúdio para gerar materiais práticos que posso usar no meu dia a dia fora da tela:
 
-1. 🗺️ **Mapa Mental da Jornada de Inglês (A1 a C2):**  
-   - [`materiais/mapa_mental.md`](materiais/mapa_mental.md) (Diagrama Mermaid Interativo)  
-   - [`materiais/mapa_mental.jpg`](materiais/mapa_mental.jpg) (Visual Infográfico Gerado)
-
-2. 📊 **Slides de Apresentação:**  
-   - [`materiais/slides_guia_estudos.md`](materiais/slides_guia_estudos.md) (Apresentação completa sobre técnicas de estudo e Tech English)
-
-3. 📖 **Guia de Estudos com Quiz & Glossário Tech:**  
-   - [`materiais/guia_estudos_quiz_glossario.md`](materiais/guia_estudos_quiz_glossario.md) (Testes práticos por nível com gabarito citado e 10+ termos de programação)
-
-4. 🎙️ **Roteiro do Resumo em Áudio (Podcast):**  
-   - [`materiais/roteiro_podcast_audio.md`](materiais/roteiro_podcast_audio.md) (Transcrição do áudio em estilo conversa de podcast para revisão)
+1. 🗺️ **Mapa Mental:** Criado em [`materiais/mapa_mental.md`](materiais/mapa_mental.md) e visualmente em [`materiais/mapa_mental.jpg`](materiais/mapa_mental.jpg).
+2. 📊 **Slides de Estudo:** Disponível em [`materiais/slides_guia_estudos.md`](materiais/slides_guia_estudos.md).
+3. 📖 **Guia com Quiz e Glossário Tech:** Criado em [`materiais/guia_estudos_quiz_glossario.md`](materiais/guia_estudos_quiz_glossario.md).
+4. 🎙️ **Roteiro de Podcast em Áudio:** Criado em [`materiais/roteiro_podcast_audio.md`](materiais/roteiro_podcast_audio.md).
 
 ---
 
 ## 🖼️ Visualização do Mapa Mental
 
 ![Mapa Mental da Jornada de Aprendizado](materiais/mapa_mental.jpg)
+
+---
+
+## 💡 O que Aprendi Construindo este Segundo Cérebro
+
+1. **Curadoria é tudo:** Não adianta jogar 50 PDFs aleatórios. É melhor ter 5 fontes de alta qualidade que respondem com precisão.
+2. **Citações dão segurança:** Saber exatamente de qual aula ou documento veio a explicação evita que eu decore regras erradas.
+3. **Estudo ativo:** Usar a IA para gerar quizzes e explicar termos de tecnologia tornou o aprendizado muito mais prático para minha rotina.
 
 ---
 
@@ -111,20 +113,10 @@ Antes de submeter o repositório na plataforma da DIO, verifiquei todos os itens
 - [x] Cada resposta citada no README mostra de qual fonte veio.
 - [x] O repositório está em uma conta pública no GitHub.
 - [x] O nome do repositório está legível, em minúsculas e sem acento/caracteres especiais (`segundo-cerebro-ingles-gemini-notebook`).
-- [x] Todos os arquivos citados no README existem no repositório e têm conteúdo real.
+- [x] Todos os arquivos citados no README me pertencem e têm conteúdo real.
 - [x] O link enviado é o do repositório no GitHub.
 - [x] Nenhuma fonte possui dados pessoais sensíveis ou materiais protegidos indevidamente.
 
 ---
 
-## 🚀 Como Executar ou Replicar este Projeto
-
-1. Acesse o [Gemini Notebook (NotebookLM)](https://notebook.google.com/).
-2. Crie um novo notebook chamado **"Segundo Cérebro - Inglês A1 a C2"**.
-3. Importe os links dos vídeos da BBC/Rachel's English e os PDFs indicados em [`docs/fontes_curadas.md`](docs/fontes_curadas.md).
-4. Insira a diretriz de comportamento presente em [`docs/diretriz_comportamento.md`](docs/diretriz_comportamento.md).
-5. Interaja no chat para gerar quizzes, tirar dúvidas e criar materiais no Estúdio!
-
----
-
-*Projeto desenvolvido para o Desafio de Código da Digital Innovation One (DIO).* 🚀
+*Projeto desenvolvido por Elizeu Couto para o Desafio de Código da Digital Innovation One (DIO).* 🚀
